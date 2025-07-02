@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'js/bootstrap.min.js' %}">
+    <link rel="stylesheet" href="{% static 'css/services.css' %}">
+</head>
+<body style="background-image: url(https://storage.googleapis.com/msgsndr/fI5bxZVCYlrV4iHsFCnG/media/64a68527c514a94a93233441.jpeg);">
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #2a54ec;">
+        <img src="{% static 'images/2.png' %}" style="height: 70px; width: 70px; margin-left: 10px;">
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active" style="margin-left: 500px;">
+                    <a class="nav-link" href="../">Home </a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="../about" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="../admin">Action 1</a>
+                        <a class="dropdown-item" href="../manager">Action 2</a>
+                        <a class="dropdown-item" href="../cook">Action 3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../contact">Contact</a>
+                </li>
+                <button style="border: deepskyblue; background-color: rgb(66, 152, 238); -webkit-text-fill-color: black; margin-left: 500px;">
+                <li class="nav-item">
+                    <a class="nav-link" href="../login">Login </a>
+                </li>
+            </button>
+        </div>
+    </nav> <br>
+    <div style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkXUqohwvlVR9b5E-PcMlCMapy5oIzSC9zHA&s) ;height: 100px;width:100%;">
+        <h1 style="background-color: rgba(29, 43, 245, 0.484); height: 100px; text-align: center;padding-top: 30px; text-shadow: tomato;">Services</h1>
+    </div> <br>
+    
+       <div style="display: flex;margin: 2px;">
+         <div style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQxM69rzdYAZQP_5YDcq5aPjndh7fQcD_IZg&s) ;height: 200px;width:32%;margin: 5px;">
+             <h1 style="background-color: rgba(5, 248, 248, 0.484); height: 200px; text-align: center;padding-top: 80px;">INDIAN</h1>
+         </div>
+         <div style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6fTCQKE6iNjyULGrgi5fvrSWRrkzT-YFVOQ&s);height: 200px;width:32%;margin: 5px;">
+             <h1 style="background-color: rgba(41, 241, 131, 0.666); height: 200px; text-align: center;padding-top: 80px;">CONTINENTAL</h1>
+         </div>
+         <div style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB6Xih5yP51YFwimwqmJBY2eQ9WBLd5BMPuQ&s);height: 200px;width:32%;margin: 5px;">
+            <h1 style="background-color: rgba(241, 41, 234, 0.553); height: 200px; text-align: center;padding-top: 80px;">CHINESE</h1> 
+         </div>
+       </div>
+       <div style="display: flex;margin: 2px;">
+        
+        <div style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6fTCQKE6iNjyULGrgi5fvrSWRrkzT-YFVOQ&s);height: 200px;width:32%;margin: 5px;">
+            <h1 style="background-color: rgba(60, 206, 74, 0.666); height: 200px; text-align: center;padding-top: 80px;">STARTERS</h1>
+        </div>
+        
+        <div style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB6Xih5yP51YFwimwqmJBY2eQ9WBLd5BMPuQ&s);height: 200px;width:32%;margin: 5px;">
+           <h1 style="background-color: rgba(241, 41, 234, 0.553); height: 200px; text-align: center;padding-top: 80px;">MAINCOURSE</h1> 
+        </div>
+        <div style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQxM69rzdYAZQP_5YDcq5aPjndh7fQcD_IZg&s) ;height: 200px;width:32%;margin: 5px;">
+            <h1 style="background-color: rgba(5, 248, 248, 0.484); height: 200px; text-align: center;padding-top: 80px;">DESSERTS</h1>
+        </div>
+      </div> 
+      <div style="display: flex;margin: 2px;">
+        
+        <div style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6fTCQKE6iNjyULGrgi5fvrSWRrkzT-YFVOQ&s);height: 200px;width:32%;margin: 5px;">
+            <h1 style="background-color: rgba(207, 56, 226, 0.666); height: 200px; text-align: center;padding-top: 80px;">ROTIS</h1>
+        </div>
+        <div style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQxM69rzdYAZQP_5YDcq5aPjndh7fQcD_IZg&s) ;height: 200px;width:32%;margin: 5px;">
+            <h1 style="background-color: rgba(5, 248, 248, 0.484); height: 200px; text-align: center;padding-top: 80px;">TANDURI</h1>
+        </div>
+        <div style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB6Xih5yP51YFwimwqmJBY2eQ9WBLd5BMPuQ&s);height: 200px;width:32%;margin: 5px;">
+           <h1 style="background-color: rgba(55, 230, 52, 0.553); height: 200px; text-align: center;padding-top: 80px;">ARABIAN</h1> 
+        </div>
+        
+      </div>
+        
+    <div style="display: flex;margin-top: 30px;">
+        <div style="height: 250px;width: 33.3%;background-color: rgb(20, 85, 248);border: 1px solid black;">
+            <img src="{% static 'images/2.png' %}" style="height: 200px;width: 75%;margin-top: px;margin-left: 30px;">
+            <h4 style="text-align: center;">VOLA'S Kitchen</h4>
+        </div>
+        <div style="height: 250px;width: 33.3%;background-color: rgb(20, 85, 248); text-align: center;border: 1px solid black;">
+            <h3 style="text-decoration: underline;margin-top: 20px;margin-bottom: px;">MENU</h3>
+            <p>Home <br> About <br>Services <br> Gallery <br> Contact  <br> Login </p>
+           
+    
+         
+        </div>
+        <div style="height: 250px;width: 33.3%;background-color: rgb(20, 85, 248);border: 1px solid black;" >
+            <center>
+            <h3 style="margin-top: 20px;text-decoration: underline;">Subscribe </h3>
+            <form> 
+                <input type="text" placeholder="Enter your name" style="margin-top: 20px;height: 30px;width: 200px;"><br> <br>
+                <input type="email" placeholder="Enter your email id" style="height: 30px;width: 200px;"><br>
+                <button style="background-color: rgb(96, 215, 245);height: 30px;width: 70px; margin-top: 30px;">Submit</button>
+            </form>
+            </center>
+    
+    
+        </div>
+    
+    
+        </div>
+</body>
+</html>

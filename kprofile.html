@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'js/bootstrap.min.js' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body style="background-image: url(../../static/images/feedbackbg.jfif);background-size: contain;background-repeat: no-repeat; background-size: cover;">
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #88c9f8;">
+        <img src="{% static 'images/2-removebg-preview.png' %}" style="height: 120px;width: 180px;">
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+       <!-- Button trigger modal -->
+       <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modelId" style="margin-left: 80%;">
+         Logout
+       </button>
+       
+       <!-- Modal -->
+       <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="background-color: rgb(175, 248, 238);">
+                <div class="modal-header">
+                    <h5 class="modal-title">Logout</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    Are you sure, you wanna logout?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-success">Yes</button>
+                </div>
+            </div>
+        </div>
+       </div>
+    </nav><br>
+    <div style="display: flex;">
+        <div>
+            <img src="{% static 'images/kitchenstaff.jpg' %}" style="height: 550px; width: 550px; margin-left: 300px;">
+        </div>
+    <div class="container" style=" background-color: #bdf1efdd;padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); width: 100%;max-width: 400px; margin-left: 0px;">
+        <h2 style="text-decoration: underline; font-variant:small-caps;">Staff Profile:</h2><br>
+        <h3>{{message}}</h3>
+        <form action="profile" method="POST"> 
+            {% csrf_token %}
+            <div>
+            <div>
+                <label for="name"> First Name:</label>
+                
+                <input type="text" value="Ravi" id="name" placeholder="RAVITEJA" name="firstname" style="margin-left: 40px;">
+                
+            </div><br>
+            <div>
+                <label for="name"> Last Name:</label>
+                
+                <input type="text" value="shanigaram"  id="name" placeholder="SHANIGARAM " name="lastname" style="margin-left: 40px;">
+                
+            </div><br>
+            <div>
+                <label for="email">Email:</label>
+            
+                <input type="email" value="ravi@gmail" id="email" placeholder="raviteja@gmail.com " name="email" required style="margin-left: 75px;">
+        
+            </div> <br>
+            <div>
+                <label for="number">Contact number:</label>
+    
+                <input type="text" value="9876543210" placeholder=" 9874561230" pattern="[7-9]{1}[0-9]{9}" 
+           title="Phone number with 7-9 and remaing 9 digit with 0-9" name="contactnumber" style="margin-left: 8px;">
+                
+            </div> <br>
+            <div>
+                <label for="name"> Address:</label>
+                
+                <input type="text" value="Hyderabad" id="name" placeholder="B.Shankarlal nagar ,Hyderabad" name="address" style="margin-left: 60px;">
+                
+            </div> <br>
+            <div>
+                <label for="name"> Qualification:</label>
+                
+                <input type="text" value="Hotelmanagement" id="name" placeholder="Hotel Management" name="qualification" required style="margin-left: 30px;">
+                
+            </div> <br>
+
+            <label for="number">Special in:</label>
+            
+            <input type="text" value="chickenbiryani" placeholder=" Chicken biryani " name="specialin" required  style="margin-left: 50px;">
+            
+        </div> <br>
+       
+           
+            <input type="submit" value="Edit" style="background-color: rgb(98, 183, 239);border-radius: 10px;height: 25px; width: 90px; margin-left: 200px;">
+        </form>
+    
+    </div>
+    </div>
+</div> 
+    <div style="display: flex;margin-top: 30px;margin-bottom: 0px;">
+        <div style="height: 150px;width: 66.7%;background-color: #88c9f8; text-align: center;">
+           <p style="padding: 60px;text-shadow: whitesmoke; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 25px; "><b>Copyrights issued by: RavitejaShanigaram</b></p>
+           
+    
+         
+        </div>
+        <div style="height: 150px;width: 33.3%;background-color:  #88c9f8;" >
+           
+            <img src="{% static 'images/2-removebg-preview.png' %}" style="height: 160px; width: 220px; margin-left: 200px;">
+           
+    
+    
+        </div>
+</body>
+</html> 

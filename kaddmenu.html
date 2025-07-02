@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'js/bootstrap.min.js' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body style="background-image: url(../../static/images/feedbackbg.jfif);background-size: contain;background-repeat: no-repeat; background-size: cover;">
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #88c9f8;">
+        <img src="{% static 'images/2-removebg-preview.png' %}" style="height: 120px;width: 180px;">
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+       <!-- Button trigger modal -->
+       <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modelId" style="margin-left: 80%;">
+         Logout
+       </button>
+       
+       <!-- Modal -->
+       <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="background-color: rgb(175, 248, 238);">
+                <div class="modal-header">
+                    <h5 class="modal-title">Logout</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    Are you sure, you wanna logout?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-success">Yes</button>
+                </div>
+            </div>
+        </div>
+       </div>
+    </nav><br>
+    <div class="container" style="background-color: #94f6f3d4;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 400px;"> 
+        <h2 style="text-align: center; font-variant: small-caps; text-decoration: underline; ">Add Fooditem:</h2>
+        <h3>{{message}}</h3>
+        <form action="../kaddmenu/{{user.username}}" method="POST" style="text-align: center;">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="discription" style="font-size: 20px;">Fooditem:</label>
+                <input type="text" id="fooditemname" name="fooditem" placeholder="Fooditem name" required style=" border-radius: 10px;height: 40px;">
+            </div><br>
+            <div class="form-group">
+                <label for="discription" style="font-size: 20px;">Quantity:</label>
+                <input type="text" id="quantity" name="quantity" placeholder="Enter quantity of fooditem" required style=" border-radius: 10px;height: 40px;">
+            </div><br>
+            <div class="form-group">
+                <label for="discription" style="font-size: 20px;">Price:</label>
+                <input type="number" id="price" name="price" placeholder="Enter price of fooditem" required style=" border-radius: 10px;height: 40px;">
+            </div><br>
+            <div class="form-group">
+                <button type="submit" style="margin-left: 120px; margin-top: 10px; margin-right: 130px; height: 30px; border-radius: 8px; background-color: rgb(151, 218, 245);">ADD </button>
+            </div>
+        </form>
+        
+    </div> 
+    </div><br>
+
+    <div style="display: flex;margin-top: 30px;margin-bottom: 0px;">
+        <div style="height: 150px;width: 66.7%;background-color: #88c9f8; text-align: center;">
+           <p style="padding: 60px;text-shadow: whitesmoke; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 25px; "><b>Copyrights issued by: RavitejaShanigaram</b></p>
+           
+    
+         
+        </div>
+        <div style="height: 150px;width: 33.3%;background-color:  #88c9f8;" >
+           
+            <img src="{% static 'images/2-removebg-preview.png' %}" style="height: 160px; width: 220px; margin-left: 200px;">
+           
+    
+    
+        </div>
+</body>
+</html> 

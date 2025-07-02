@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'js/bootstrap.min.js' %}">
+</head>
+<body style="background-image: url(https://storage.googleapis.com/msgsndr/fI5bxZVCYlrV4iHsFCnG/media/64a68527c514a94a93233441.jpeg);">
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #2a54ec;">
+        <img src="{% static 'images/2.png' %}" style="height: 70px; width: 70px; margin-left: 10px;">
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active" style="margin-left: 500px;">
+                    <a class="nav-link" href="../">Home </a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="../kitchen/about.html" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="../kitchen/admin.html">Action 1</a>
+                        <a class="dropdown-item" href="../kitchen/manager.html">Action 2</a>
+                        <a class="dropdown-item" href="../kitchen/cook.html">Action 3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../contact">Contact</a>
+                </li>
+                <button style="border: deepskyblue; background-color: rgb(66, 152, 238); -webkit-text-fill-color: black; margin-left: 500px;">
+                <li class="nav-item">
+                    <a class="nav-link" href="../login">Login </a>
+                </li>
+            </button>
+        </div>
+    </nav>
+    <div style="background-image: url(//www.shutterstock.com/image-vector/admin-icon-set-collection-user-260nw-1536676799.jpg); height:
+    100px; width: 100%;">
+    <h1
+        style="text-align: center;padding-top: 30px; background-color: white;height: 100px; width: 35%; margin-left: 520px;">
+        Cook</h1>
+    <div
+        style="border: 1px solid black; padding: 20px; margin-top: 20px; margin-right: 20px; background-color: rgba(250, 235, 215, 0.644); text-align: justify; margin-left: 20px;">
+        <h1>Introduction:</h1>
+        <p style="text-align: justify;">Manager is the key person to add cloud kitchens to the portal. He approaches the cloud kitchen owners and explains them the benifits of joining in our portal and convince them. He will be addressing all the key points about our portal like giving them machinaries or investing on their work, make them more convincing . He will handle all the orders that are being placed by the customers in the portal and divides them according to their nature and splits them and send to that respective cook and tells them to start cooking . After preparing food he will assign a delivery partner and completes the order in less time which will benifit both cook and the customer. </p>
+    </div><br>
+    <div style="border: 1px solid black; padding: 20px; margin-top: 20px; margin-right: 20px; background-color: rgba(250, 235, 215, 0.644); text-align: justify; margin-left: 20px;">
+        <h1>Functinalities :</h1>
+        <ul>
+            <li>Recognising the best cooks in the nearby surrounding areas . </li>
+            <li>Convincing them to join the portal.</li>
+            <li>Providing all the requirements that are essential for the preparation of food.</li>
+            <li>Investing on machinaries .</li>
+            <li>Keeping records of orders and staff .</li>
+            <li>Maintaing the records of orders flow.</li>
+            <li>Giving salary to the cloud kitchen owners</li>
+           
+        </ul>
+    </div>
+    <div style="display: flex;margin-top: 30px;">
+        <div style="height: 250px;width: 33.3%;background-color: rgb(20, 85, 248);border: 1px solid black;">
+            <img src="{% static 'images/2.png' %}" style="height: 200px;width: 75%;margin-top: px;margin-left: 30px;">
+            <h4 style="text-align: center;">VOLA'S Kitchen</h4>
+        </div>
+        <div style="height: 250px;width: 33.3%;background-color: rgb(20, 85, 248); text-align: center;border: 1px solid black;">
+            <h3 style="text-decoration: underline;margin-top: 20px;margin-bottom: px;">MENU</h3>
+            <p>Home <br> About <br>Services <br> Gallery <br> Contact  <br> Login </p>
+           
+    
+         
+        </div>
+        <div style="height: 250px;width: 33.3%;background-color: rgb(20, 85, 248);border: 1px solid black;" >
+            <center>
+            <h3 style="margin-top: 20px;text-decoration: underline;">Subscribe </h3>
+            <form> 
+                <input type="text" placeholder="Enter your name" style="margin-top: 20px;height: 30px;width: 200px;"><br> <br>
+                <input type="email" placeholder="Enter your email id" style="height: 30px;width: 200px;"><br>
+                <button style="background-color: rgb(96, 215, 245);height: 30px;width: 70px; margin-top: 30px;">Submit</button>
+            </form>
+            </center>
+    
+    
+        </div>
+</body>
+</html>

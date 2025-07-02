@@ -1,0 +1,181 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'js/bootstrap.min.js' %}">
+</head>
+<body  style="background-color: rgb(178, 156, 156);">
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #2a54ec;">
+        <img src="{% static 'images/2.png' %}" style="height: 70px; width: 70px; margin-left: 10px;">
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active" style="margin-left: 500px;">
+                    <a class="nav-link" href=''>Home </a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href='about' id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href='admin'>Admin</a>
+                        <a class="dropdown-item" href='manager'>Manager</a>
+                        <a class="dropdown-item" href='cook'>Cook</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href='services'>Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href='gallery'>Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href='contact'>Contact</a>
+                </li>
+                <button style="border: deepskyblue; background-color: rgb(66, 152, 238); -webkit-text-fill-color: black; margin-left: 500px;">
+                <li class="nav-item">
+                    <a class="nav-link" href='login'>Login </a>
+                </li>
+            </button>
+        </div>
+        
+    </nav> <br>
+    <img src="https://media.istockphoto.com/id/1292338228/vector/vector-banner-of-cloud-kitchen-topic-and-six-elements-of-definition.jpg?s=170667a&w=is&k=20&c=JNy6qRjZDJjelX9Mr5Zj1mCm54ZResGI5pPgEqCEDlo=" style="width: 95%;margin-left: 20px;height: 300px;"> <br>
+
+     <div>
+        <h1 style="text-align: center;">INTRODUCTION</h1>
+        <p style="border: 1px solid black; padding: 20px; margin: 10px;background-color: rgba(250, 235, 215, 0.692); text-align: justify;">Vola portal is a portal which is developed on the basis of improving the marketing and sales of the items which has been prepared in the cloud kitchens. Our portal gives an opportunity to the owners of cloud kitchen to develop their  business by giving them new strategies and equipment they require to expand their business.
+            Cloud kitchen is a type of take away restaurant which prepares food in home and sells them through online or offline mode which gives the customers the vibe and taste of home  food and who loves to have Homemade food will love these type of food. <br>
+            Basically our portal has mainly three modules namely admin,manager and the cooks or owners of cloud kitchen. <br>
+            Admin manages all the registrations and transactions those are taking place in the portal.
+            Manager takes the responsibility of adding cloud kitchens, splitting of orders according to their makers and varieties,making payments to the owners of cloud kitchens,handling online related issues.He is the main communicator between the cook and the customer. <br>
+            Cooks takes the orders from the managers and starts preparing them and sends those orders to the customers after preparation. <br>
+            Vola creates an opportunity for cloud kitchen makers to make more food in less time and increase their income by providing them the advanced machinary to fasten the cooking process. <br>
+            Manager approaches the owners of these cloud kitchen and gives them the insights of our portal and makes them to register in this portal amd explains them all the benefits they get if they register for this portal. The owners of this cloud kitchens will be mostly housewifes who are good at cooking and want to showcase their mastery in that field and want to earn money from cooking.
+
+
+        </p>
+     </div>
+    <h1 style="text-align: center;">EXISTING SYSTEM</h1>
+    <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+            <div
+                class="h-100 p-5 text-black"
+            >
+                
+                <p style="border: 1px solid black; padding: 20px; margin: 0px;background-color: rgba(250, 235, 215, 0.644); text-align: justify;">
+                    In the present scenario the cloud kitchen owners face many problems mainly marketing and selling their products online besides they also have lack of investment,lack of machineries which can speedup the process of cooking and makes the cook to get less strained. There is no guidance to the owners or cooks about how to start their business and how to grow it in this fast growing world as there may be no knowledge about the social media platforms or the lack of knowledge in adapting the new generation technology and threiving through old techniques and procedures. The owners may be most of the housewifes who stay at home and are really good at cooking and want to start their business in cooking but they lack investments as they cannot afford all the requirements that are needed to make food ,so they limit their preparations and settle with less income. They won't be able to invest in huge machineries which make their work easy and prepares food in less as they are very costly to purchase.
+                </p>
+               
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div
+                class="h-100 p-5 "
+            >
+               <img src="https://lh3.googleusercontent.com/njXr4dDPl1RwPAjRBS0bxWXu3y39jeUAzSiOCAoIHv0jSMf73-3kzqjoMrgqF_uqjDER2THj4W0wz-wh37_b5bo5C9rBxtlF07R6axCLiQ=w400-rw"  style="height: 350px; width: 600px;border: 2px solid black;">
+            </div>
+        </div>
+    </div>
+    <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+            <div
+                class="h-100 p-5 text-black"
+            >
+               <img src="https://bingage.com/blog/wp-content/uploads/2020/06/99006201_1372891579561801_4847026230265905152_o-650x650.jpg" style=" height: 300px; width: 650px;">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div
+                 style="border: 1px solid black; padding: 20px; margin-top: 45px; margin-right: 40px; background-color: rgba(250, 235, 215, 0.644); text-align: justify;">
+                <h2 style="text-align: center;">Disadvantages</h2>
+                <ul>
+                    <li>Lack of Knowledge in market requirements and failing in fullfilling them</li>
+                    <li>Not able to make investments on new machinaries that could help in preparing the food in less time</li>
+                    <li>As the owners of these cloud kitchens are hiusewifes and they lack in the knowledge in marketing and advertising about their products in the social media platforms</li>
+                    <li>The customers reach will be less as they won't known by more number of people</li>
+                    <li>Income will be moderate as they can demand more as it will make time to prepare food and keep the customers waiting for more time</li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+    <h1 style="text-align: center;">Proposed System</h1> 
+    <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+            <div
+                class="h-100 p-5 text-black "
+            >
+                
+                <p style="border: 1px solid black; padding: 20px; margin: 0px;background-color: rgba(250, 235, 215, 0.644); text-align: justify;">
+                    So to overcome all these disadvantages we propose a new portal named Vola. In vola we have three modules  namely admin ,manager and the cook. The admin will monitor all the activities that are being carried out inside the portal. The main work here will be done by manger who is responsible for bringing the cloud kitchens to come and register in our portal. In our portal we will provide the machineries that are required to prepare food and which will reduce the time required to prepare food. Our portal will handle all the technical issues and marketing strategies. We will provide all the requirements that are essential for making the food ready for delivery in less time that is  actually required to  do that dish. the cook or chef has to just prepare food and send for delivery. they can earn whilw we invest in their work which increses their income as well as save their time and strength.
+                </p>
+                 
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div
+                class="h-100 p-5 "
+            >
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI6XJoNOQSfs4b6nHTkx4Q4RuqnUEV3L2hdw&s" style=" height: 300px; width: 650px;">
+            </div>
+        </div>
+    </div>
+    <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+            <div
+                class="h-100 p-5 text-black "
+            >
+              <img src="https://therollingplate.com/wp-content/uploads/2023/08/benifits-of-a-cloud-kitchen.png" style=" height: 340px; width: 650px;" >
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div
+            style="border: 1px solid black; padding: 20px; margin-top: 45px; margin-right: 40px; background-color: rgba(250, 235, 215, 0.644); text-align: justify;"
+            >
+            <h2 style="text-align: center;">Advantages</h2>
+            <ul>
+                <li>Doesnot need to have high investments on the machinery and raw materials required for preparing orders.</li>
+                <li>Cooks will be able to prepare food in less time as they will have all the neccesities they want preready.</li>
+                <li>Marketing about their products will be handeled by the portal throughout social media platforms.</li>
+                <li>Online orders will be handled by the manager who splits the order and maintain all the details about them.</li>
+                <li>There will less waiting time for the customers as all the orders will be scheduled by the time order was taken place in the portal.</li>
+            </ul>
+               
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <div style="display: flex;margin-top: 30px;">
+        <div style="height: 250px;width: 33.3%;background-color: rgb(20, 85, 248);border: 1px solid black;">
+            <img src="{% static 'images/2.png' %}" style="height: 200px;width: 75%;margin-top: px;margin-left: 30px;">
+            <h4 style="text-align: center;">VOLA'S Kitchen</h4>
+        </div>
+        <div style="height: 250px;width: 33.3%;background-color: rgb(20, 85, 248); text-align: center;border: 1px solid black;">
+            <h3 style="text-decoration: underline;margin-top: 20px;margin-bottom: px;">MENU</h3>
+            <p>Home <br> About <br>Services <br> Gallery <br> Contact  <br> Login </p>
+           
+    
+         
+        </div>
+        <div style="height: 250px;width: 33.3%;background-color: rgb(20, 85, 248);border: 1px solid black;" >
+            <center>
+            <h3 style="margin-top: 20px;text-decoration: underline;">Subscribe </h3>
+            <form> 
+                <input type="text" placeholder="Enter your name" style="margin-top: 20px;height: 30px;width: 200px;"><br> <br>
+                <input type="email" placeholder="Enter your email id" style="height: 30px;width: 200px;"><br>
+                <button style="background-color: rgb(96, 215, 245);height: 30px;width: 70px; margin-top: 30px;">Submit</button>
+            </form>
+            </center>
+    
+    
+        </div>
+</body>
+</html>

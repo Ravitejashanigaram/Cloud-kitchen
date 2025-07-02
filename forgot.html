@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'js/bootstrap.min.js' %}">
+    <style>
+        .container {
+        background-color: #5bc8d6ac;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+    }
+        </style>
+</head>
+<body style="background-image: url(https://img.freepik.com/free-vector/futuristic-background-with-lines_23-2148487905.jpg?size=626&ext=jpg&ga=GA1.1.2116175301.1719273600&semt=ais_user); background-repeat: no-repeat; background-size: cover;">
+    
+        <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #2a54ec;">
+            <img src="{% static 'images/2.png' %}" style="height: 70px; width: 70px; margin-left: 10px;">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active" style="margin-left: 500px;">
+                        <a class="nav-link" href="../">Home </a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="../kitchen/about.html" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="../kitchen/admin.html">Action 1</a>
+                            <a class="dropdown-item" href="../kitchen/manager.html">Action 2</a>
+                            <a class="dropdown-item" href="../kitchen/cook.html">Action 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact">Contact</a>
+                    </li>
+                    <button style="border: deepskyblue; background-color: rgb(66, 152, 238); -webkit-text-fill-color: black; margin-left: 500px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../login">Login </a>
+                    </li>
+                </button>
+            </div>
+        </nav>
+        <br>
+        <div style="display: flex; margin-top: 40px;">
+        <div style="margin-left: 450px;">
+            <img src="https://media.istockphoto.com/id/1043122528/photo/password-reset-email-interface-update-3d-rendering.jpg?s=612x612&w=0&k=20&c=M7zAw6XXWHNkupLhURkcyPOEviHVy_a9oSXvCuQYUWo=" style="height: 250px;">
+        </div>
+        <div class="container" style="margin-left: -0px;">
+            <h3>Forgot Password?</h3>
+            <h4>{{message}} </h4>
+            <form action="../forgot/" method="POST">
+                {% csrf_token %}
+            <label for="email">Recovery email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter recovery email" required> <br> <br>
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Enter Password" name="password" style="margin-left: 40px;"><br><br>
+            <button style="margin-left: 130px; border-radius: 10px;">Submit</button>
+            </form>
+    </div> 
+    </div><br> <br><br>
+   
+    <div style="display: flex;margin-top: 30px;">
+        <div style="height: 250px;width: 33.3%;background-color: rgb(20, 85, 248);border: 1px solid black;">
+            <img src="{% static 'images/2.png' %}" style="height: 200px;width: 75%;margin-top: px;margin-left: 30px;">
+            <h4 style="text-align: center;">VOLA'S Kitchen</h4>
+        </div>
+        <div style="height: 250px;width: 33.3%;background-color: rgb(20, 85, 248); text-align: center;border: 1px solid black;">
+            <h3 style="text-decoration: underline;margin-top: 20px;margin-bottom: px;">MENU</h3>
+            <p>Home <br> About <br>Services <br> Gallery <br> Contact  <br> Login </p>
+           
+    
+         
+        </div>
+        <div style="height: 250px;width: 33.3%;background-color: rgb(20, 85, 248);border: 1px solid black;" >
+            <center>
+            <h3 style="margin-top: 20px;text-decoration: underline;">Subscribe </h3>
+            <form> 
+                <input type="text" placeholder="Enter your name" style="margin-top: 20px;height: 30px;width: 200px;"><br> <br>
+                <input type="email" placeholder="Enter your email id" style="height: 30px;width: 200px;"><br>
+                <button style="background-color: rgb(96, 215, 245);height: 30px;width: 70px; margin-top: 30px;">Submit</button>
+            </form>
+            </center>
+    
+    
+        </div>  
+</body>
+</html>
